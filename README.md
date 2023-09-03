@@ -32,8 +32,8 @@
 ## 5. 모델 제작
 - ESRGAN을 활용한 번호판 이미지 전처리
 - OCR을 활용한 번호판 번호 예측
-- 라벨링을 활용하여 YOLOv5 혹은 CNN을 활용한 번호 예측(분류)
-- Fast-R-CNN, Mask-R-CNN (현재 오류 발생 : 학습할 때 loss가 0만 나옴)
+- 라벨링을 활용하여 YOLOv5 혹은 CNN을 활용한 번호 예측 (분류)
+- 전처리 후 COCO 파일로 저장하여 Roboflow에서 모델 학습 (CNN 기반)
   
 ## 6. 개발 일지 
 <a href="https://shrub-snap-550.notion.site/CRUD-566be659b7bf4693a6515f408cf2f1d9?pvs=4">개발 일지 보러 가기  <img width="23" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg"> </a>****
