@@ -44,4 +44,4 @@
 ## 8. 라이센스
 This project is licensed by <a href = "https://creativecommons.org/licenses/by-nc-nd/4.0/">Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</a> which is provided by Creative Commons. You do not allow commercial use, do not allow variations or derivatives, and require the original author's representation when sharing works publicly. <br/>
 
-이 프로젝트는 Creative Commons에서 제공하는 <a href = "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko">Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</a> 라이센스를 따르고 있습니다. 상업적 이용을 허용하지 않고, 변형 및 파생물 작성을 허용하지 않으며, 작품을 공개적으로 공유할 때 원저작자 표시를 요구합니다.
+이 프로젝트는 Creative Commons에서 제공하는 <a href = "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ko">Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</a> 라이센스가 적용되고 있습니다. 상업적 이용을 허용하지 않고, 변형 및 파생물 작성을 허용하지 않으며, 작품을 공개적으로 공유할 때 원저작자 표시를 요구합니다.
