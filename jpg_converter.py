@@ -7,8 +7,8 @@ def rename_folders_and_files(folder_path):
     for item in contents:
         item_path = os.path.join(folder_path, item)
         
-        if os.path.isfile(item_path):  # 파일인 경우
-            if not item.endswith(".jpg"): # 이름에 jpg로 끝나지 않는 경우
+        if os.path.isfile(item_path):  # 형식이 파일인 경우
+            if not item.endswith(".jpg"): # 이름 뒤에 jpg로 끝나지 않는 경우
                 new_item_name = item + ".jpg" # 이름 뒤에 jpg를 붙인다
                 new_item_path = os.path.join(folder_path, new_item_name)
                 os.rename(item_path, new_item_path)
