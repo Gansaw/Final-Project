@@ -29,10 +29,15 @@
 - [ ] 차량 번호판 이미지 분류
 - [ ] 새로운 차량에 대해서 이미지 저장 후 학습 진행
 
-## 5. 모델 제작
+## 5. 구현 모델
 - ESRGAN을 활용한 번호판 이미지 전처리
 - OCR을 활용한 번호판 번호 예측
-- 전처리 후 COCO 파일로 저장하여 Roboflow에서 모델 학습 (CNN 기반)
-  
-## 6. 개발 일지 
+- 전처리 후 CNN을 기반으로 한 Roboflow에서 모델 학습
+
+## 6. 보고서 작성
+- 프로젝트 진행 과정
+- 모델 구현
+- 프로젝트 결과 및 느낀 점
+    
+## 7. 개발 일지 
 <a href="https://www.notion.so/02bdf271067b4de6bd30e72e18cc2522?pvs=4">개발 일지 보러 가기  <img width="23" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg"> </a>****
