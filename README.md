@@ -40,3 +40,6 @@
     
 ## 7. 개발 일지 
 <a href="https://www.notion.so/02bdf271067b4de6bd30e72e18cc2522?pvs=4">개발 일지 보러 가기  <img width="23" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg"> </a>****
+
+## 8. 라이센스
+This project is licensed by "Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)" which is provided by Creative Commons. Do not allow commercial use, do not allow variations or derivatives, and require the original author's representation when sharing works publicly.
