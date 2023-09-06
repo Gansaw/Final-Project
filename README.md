@@ -36,7 +36,7 @@
 ## 6. 보고서 작성
 - 프로젝트 진행 과정
 - 모델 구현
-- 프로젝트 결과 및 느낀 점
+- 프로젝트 계획 & 결과 보고서 (수정 중)
     
 ## 7. 개발 일지 
 <a href="https://www.notion.so/02bdf271067b4de6bd30e72e18cc2522?pvs=4">개발 일지 보러 가기  <img width="23" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg"> </a>****
