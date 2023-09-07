@@ -45,7 +45,7 @@ def model_result(after_path):
         cv2.waitKey(0)
         cv2.destroyAllWindows()
     else:
-        print("No text detected.")
+        print("식별 불가")
 
 if __name__ == "__main__":
     model_result()
