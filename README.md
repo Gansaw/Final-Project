@@ -58,14 +58,11 @@
 ![스크린샷 2023-09-25 100921](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/a670eb15-44a1-4552-b8e9-368a068631c1)
 - 데이터셋 추출 <br/>
 ![image](https://github.com/sou05091/MainProject_LicensePlate/blob/main/img/yolo/Export.png)
-
-#### Colab에서 모델 학습 진행 (라벨링 데이터 1000장 사용)
+- 모델 학습 <br/>
 ![image](https://github.com/sou05091/MainProject_LicensePlate/blob/main/img/yolo/model%20%ED%95%99%EC%8A%B5.png)
-
-### 9. YOLOv5 모델 결과
-#### 전체 이미지 객체 인식
+- Object Detection <br/>
 ![image](https://github.com/sou05091/MainProject_LicensePlate/blob/main/img/yolo/result.png)
-#### 번호판 객체 이미지 저장
+- 추출된 번호판 사진 저장 <br/>
 ![image](https://github.com/sou05091/MainProject_LicensePlate/blob/main/img/yolo/result1.jpg)
 
 ### 10. 이미지 분류 데이터 전처리
