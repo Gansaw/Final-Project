@@ -12,15 +12,16 @@
 
 ## 목차
 1. [프로젝트 정의](#1-프로젝트-정의)
-2. [데이터 탐색](#2-데이터-탐색)
-3. [모델 선정](#3-모델-선정)
-4. [YOLOv5s](#3-YOLOv5s)
-5. [ESRGAN](#4-ESRGAN)
-6. [OCR](#5-OCR)
-7. [Roboflow 3.0](#6-YOLOv5s)
-8. [YOLOv5x](#7-YOLOv5s)  
-9. [예측 결과](#4-예측-결과)  
-10. [Flask](#5-Flask)
+2. [팀원](#2-팀원)
+3. [데이터 탐색](#3-데이터-탐색)
+4. [모델 선정](#4-모델-선정)
+5. [YOLOv5s](#5-YOLOv5s)
+6. [ESRGAN](#6-ESRGAN)
+7. [OCR](#7-OCR)
+8. [Roboflow 3.0](#8-YOLOv5s)
+9. [YOLOv5x](#9-YOLOv5s)  
+10. [예측 결과](#10-예측-결과)  
+11. [Flask](#11-Flask)
 
  
 ## 1. 프로젝트 정의
@@ -31,7 +32,7 @@
   ![planning](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/07aeb058-d61f-4114-88b1-ca50e9159a99)
 
   
-### 팀원 
+## 2. 팀원 
 |<img width="200" alt="image" src="https://avatars.githubusercontent.com/u/129818813?v=4">|<img width="200" alt="image" src="https://avatars.githubusercontent.com/u/98063854?v=4">|<img width="200" alt="image" src="https://avatars.githubusercontent.com/u/70638717?v=4">|<img width="200" alt="image" src="https://avatars.githubusercontent.com/u/86204430?v=4">|
 | :---------------------------------: | :-----------------------------------:| :---------------------------------: | :-----------------------------------:|
 |                FrontEnd           |           Backend                       |              AI 모델 개발         |           AI 모델 개발                |       
@@ -40,12 +41,11 @@
 
 
 
-### 5. 주요 기능 
-- [ ] YOLOv5 활용 차량 번호판 객체 인식
-- [ ] 출입 차량 번호판 이미지 추출
-- [ ] 차량 번호판 이미지 분류
-- [ ] 새로운 차량에 대해서 이미지 저장 후 학습 진행
-
+## 3. 데이터 탐색
+- 데이터 수집 : 현장 사진, 번호판 사진, 차량 입출입 로그
+- 문제점 : 화질 문제, 라벨링 문제, 파일 형식 문제
+- 해결방안 : 고해상도 모델 제작, 수작업 라벨링 진행, 확장자 추가 코드 제작
+ 
 ### 6. 서비스 아키텍처
 ![image](https://file.notion.so/f/s/b1f81bed-4a33-426d-8f3c-85a73c8aa7f9/Untitled.png?id=3b1e2af4-ea4b-4f7a-ba89-b32098c778d0&table=block&spaceId=305e395a-5955-44d6-bb5f-c488ffd0100f&expirationTimestamp=1693324800000&signature=XY71KiivZQHGlN8Muvvvrn_yvKrbZ7PYf68mO5zJyf8&downloadName=Untitled.png)
 
