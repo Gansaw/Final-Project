@@ -18,6 +18,7 @@
 8. [Roboflow 3.0](#8-YOLOv5s)
 9. [YOLOv5x](#9-YOLOv5s)  
 10. [예측 결과](#10-예측-결과)
+11. [Flask](#11-Flask)
 
  
 ## 1. 프로젝트 정의
@@ -53,7 +54,8 @@
 
 ## 5. YOLOv5s
 - 데이터 라벨링 <br/>
-![image](https://github.com/sou05091/MainProject_LicensePlate/blob/main/img/yolo/RoboFlow%20%EC%82%AC%EC%9A%A9.png)
+![스크린샷 2023-09-25 103021](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/fd9e7cfa-77f7-4555-9eaf-ea621a01268f)
+![image](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/36416825-ccae-43e0-aefe-888e5308ca04)
 - 데이터 전처리 & 증강 <br/>
 ![스크린샷 2023-09-25 100921](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/a670eb15-44a1-4552-b8e9-368a068631c1)
 - 데이터셋 추출 <br/>
@@ -63,31 +65,36 @@
 - Object Detection <br/>
 ![image](https://github.com/sou05091/MainProject_LicensePlate/blob/main/img/yolo/result.png)
 - 추출된 번호판 사진 저장 <br/>
-![image](https://github.com/sou05091/MainProject_LicensePlate/blob/main/img/yolo/result1.jpg)
+![스크린샷 2023-09-25 101903](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/ca326dc0-4e08-41a2-bbef-98a841c2fd2f)
 
-### 10. 이미지 분류 데이터 전처리
-#### 데이터 전처리
-- 이미지 분류 진행 (7월달에 출입한 모든 차량, 64개 class사용)
-- class간 데이터 불균형 발생 (이미지 수가 작은 class에 대해 데이터 증강 적용)
-- 분류된 이미지 번호판 판단
-- 이미지 화질 판단 수작업
 
-![image](https://github.com/sou05091/MainProject_LicensePlate/blob/main/img/classfication/folder.png)
+## 6. ESRGAN
+- 저해상도 이미지를 고해상도로 변환
+- grayscale 기능을 추가하여 모델의 학습 효율 증가
+- 적용 결과 <br/>
+![스크린샷 2023-09-25 102142](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/4594f619-c28f-4da8-b814-7b7a211de121)
 
-### 11. 이미지 모델 분류
-#### 모델 제작 (모델 사용 안함)
-- VGG16 사용
-- 상세 코드는 GitHub 참조
-#### 모델 결과
-![image](https://github.com/sou05091/MainProject_LicensePlate/blob/main/img/classfication/result.png)
 
-![image](https://github.com/sou05091/MainProject_LicensePlate/blob/main/img/classfication/result1.png)
+## 7. OCR
+- Easy-OCR 사용
+- 예측 결과 1 <br/>
+![스크린샷 2023-09-25 102513](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/d1dde896-9612-4775-8edb-e551debdb5a8)
 
-##### 모델 사용 안하는 이유
-- 새로운 차량이 있을시 새롭게 학습해야함
-- 이미지 수가 적어 Overfiting의 경향이 보임
 
-### 12. 최종 모델
+### 8. Roboflow 3.0
+- 데이터 라벨링 <br/>
+![스크린샷 2023-09-25 103036](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/529e2e7e-87bf-4490-b05e-f95fc8c1247c)
+![labeling2](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/1558bd34-788f-4d1c-aef0-524ad7c0ae7a)
+- 데이터 전처리 & 증강 <br/>
+![스크린샷 2023-09-25 102708](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/cfeec9b5-436f-4c4b-80cf-b97a82ca2f7c)
+- 학습 결과 <br/>
+F1-Score : 85.3% <br/>
+mAP : 89.3%, precision : 86.3%, recall : 84.4% <br/>
+![스크린샷 2023-09-06 151045](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/bc8c3e62-5078-45de-a879-8398f221267c)
+- 예측 결과 2 <br/>
+![스크린샷 2023-09-25 103912](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/db044171-54d6-4d06-97fb-be26128ed30b)
+
+
 - YOLOv5x FineTuning
 - ESRGAN을 활용하여 이미지 화질 개선
 - YOLOv5로 번호판의 번호예측
@@ -96,8 +103,8 @@
 
 ### 13. Flask 제작
 #### AI모델 정리
-- 총 5가지 모델 사용 (YOLOv5, ESRGAN, YOLOv5, EasyOCR, RoboFlowOCR)
-- 3가지 모델(YOLOv5, EasyOCR, RoboFlowOCR) return값 반환 (Json 형식)
+- 총 5가지 모델 사용 (YOLOv5s, ESRGAN, Easy-OCR, RoboFlow 3.0, YOLOv5x)
+- 3가지 모델(Easy-OCR, RoboFlow 3.0, YOLOv5x) return값 반환 (json 형식)
 
 #### 모델 작업 순서
 - YOLOv5 번호판 객체인식 및 저장
