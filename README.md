@@ -1,14 +1,11 @@
 # 고철장 작업차량 차량번호 인식 모델 및 웹서비스 개발
 
 ## 기술 스택 
-<h3>Environment</h3>
-
 - <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white"/>
 - <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/>
 - <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/> <img width="23" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Notion-logo.svg">
 - <img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat-square&logo=Visual Studio Code&logoColor=white"/> <img src="https://img.shields.io/badge/Google Colab-F9AB00?style=flat-square&logo=Google Colab&logoColor=white"/>
 
-- Deep Learning:  TensorFlow, PyTorch
 
 ## 목차
 1. [프로젝트 정의](#1-프로젝트-정의)
@@ -20,8 +17,7 @@
 7. [OCR](#7-OCR)
 8. [Roboflow 3.0](#8-YOLOv5s)
 9. [YOLOv5x](#9-YOLOv5s)  
-10. [예측 결과](#10-예측-결과)  
-11. [Flask](#11-Flask)
+10. [예측 결과](#10-예측-결과)
 
  
 ## 1. 프로젝트 정의
@@ -40,22 +36,29 @@
 |[GitHub](https://github.com/EUNJIN6131)|[GitHub](https://github.com/JaeMin1130)|[GitHub](https://github.com/sou05091/)|[GitHub](https://github.com/Gansaw/)|
 
 
-
 ## 3. 데이터 탐색
-- 데이터 수집 : 현장 사진, 번호판 사진, 차량 입출입 로그
+- 데이터 수집 : 현장 사진, 번호판 사진, 차량 입출입 로그 <br/>
+![스크린샷 2023-09-25 100056](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/b95de212-ee46-407a-b0a0-2ba284efbd33)
+![스크린샷 2023-09-18 182803](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/6d8e8f75-5cf5-407b-bbde-550c87201c31)
 - 문제점 : 화질 문제, 라벨링 문제, 파일 형식 문제
 - 해결방안 : 고해상도 모델 제작, 수작업 라벨링 진행, 확장자 추가 코드 제작
- 
-### 6. 서비스 아키텍처
-![image](https://file.notion.so/f/s/b1f81bed-4a33-426d-8f3c-85a73c8aa7f9/Untitled.png?id=3b1e2af4-ea4b-4f7a-ba89-b32098c778d0&table=block&spaceId=305e395a-5955-44d6-bb5f-c488ffd0100f&expirationTimestamp=1693324800000&signature=XY71KiivZQHGlN8Muvvvrn_yvKrbZ7PYf68mO5zJyf8&downloadName=Untitled.png)
+![스크린샷 2023-09-06 151045](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/1842e134-4b23-4ade-a27c-449c179c291d)
+![스크린샷 2023-09-25 100344](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/fb3b2a1b-59ba-42e2-9466-06fed59b41e0)
 
-### 7. 데이터 라벨링
-#### YOLOv5 라벨링 (roboflow 사용) 
+ 
+## 4. 모델 선정
+![스크린샷 2023-09-25 101336](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/2aa05642-5001-4ad6-b6af-3af657f91f94)
+![스크린샷 2023-09-25 101357](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/d82c6808-d62f-4a6f-adea-09982f08808a)
+
+
+## 5. YOLOv5s
+- 데이터 라벨링 <br/>
 ![image](https://github.com/sou05091/MainProject_LicensePlate/blob/main/img/yolo/RoboFlow%20%EC%82%AC%EC%9A%A9.png)
-#### txt파일 Export
+- 데이터 전처리 & 증강 <br/>
+![스크린샷 2023-09-25 100921](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/a670eb15-44a1-4552-b8e9-368a068631c1)
+- 데이터셋 추출 <br/>
 ![image](https://github.com/sou05091/MainProject_LicensePlate/blob/main/img/yolo/Export.png)
 
-### 8. YOLOv5s 학습 진행
 #### Colab에서 모델 학습 진행 (라벨링 데이터 1000장 사용)
 ![image](https://github.com/sou05091/MainProject_LicensePlate/blob/main/img/yolo/model%20%ED%95%99%EC%8A%B5.png)
 
