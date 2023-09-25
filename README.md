@@ -28,7 +28,7 @@
 - 프로젝트명 : 고철장 작업차량 차량번호 인식 모델 및 웹서비스 개발
 - 팀 구성 : 김재민(Back-End), 김은진(Front-End), 김민범(AI-Engineer), 최호진(AI-Engineer)
 - 기술 분야 : Computer Vision, Deep Learning, Data Analysis & Processing
-- 기간: 2023.08.21(월) ~ 2023.09.22(금) </br>
+- 기간: 2023.08.21(월) ~ 2023.09.22(금) <br/>
   ![planning](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/07aeb058-d61f-4114-88b1-ca50e9159a99)
 
   
