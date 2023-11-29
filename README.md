@@ -16,7 +16,7 @@ D 기업에서는 고철장에 있는 트럭의 번호판을 식별하고 번호
 5. [YOLOv5s](#5-YOLOv5s)
 6. [ESRGAN](#6-ESRGAN)
 7. [OCR](#7-OCR)
-8. [Roboflow 3.0](#8-Roboflow_3.0)
+8. [Roboflow_3.0](#8-Roboflow_3.0)
 9. [YOLOv5x](#9-YOLOv5x)  
 10. [Flask](#10-Flask)
 
