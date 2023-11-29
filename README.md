@@ -16,7 +16,7 @@ D 기업에서는 고철장에 있는 트럭의 번호판을 식별하고 번호
 5. [YOLOv5s](#5-YOLOv5s)
 6. [ESRGAN](#6-ESRGAN)
 7. [OCR](#7-OCR)
-8. [Roboflow3.0](#8-Roboflow3.0)
+8. [Roboflow](#8-Roboflow)
 9. [YOLOv5x](#9-YOLOv5x)  
 10. [Flask](#10-Flask)
 
@@ -81,7 +81,7 @@ D 기업에서는 고철장에 있는 트럭의 번호판을 식별하고 번호
 ![스크린샷 2023-09-25 102513](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/d1dde896-9612-4775-8edb-e551debdb5a8)
 
 
-## 8. Roboflow3.0
+## 8. Roboflow
 - 데이터 라벨링 <br/>
 ![스크린샷 2023-09-25 103036](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/529e2e7e-87bf-4490-b05e-f95fc8c1247c)
 ![labeling2](https://github.com/Gansaw/License_Plate_Recognition/assets/86204430/1558bd34-788f-4d1c-aef0-524ad7c0ae7a)
